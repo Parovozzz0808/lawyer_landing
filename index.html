@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=d60b7d6c-7c21-4c60-aed4-c83b332edc27" type="text/javascript"></script>
+    <title>Михельсон</title>
+</head>
+<body>
+    <!-- Блок Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span>Михельсон</span>
+            </div>
+            <nav class="header_nav">
+                <a href="#services">Виды услуг</a>
+                <a href="#about">Обо мне</a>
+                <a href="#wework">Как я работаю</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <div class="header_call">
+                <div><span>Звоните прямо сейчас!</span><br><a href="tel:+74951234567">+7 495 123-45-67</a></div>
+                <div><button class="btn btn_orange">Заказать звонок</button></div>
+            </div>
+        </div>
+    </header>
+    <!-- Основной блок -->
+    <main class="main container">
+        <!-- Раздел Hello -->
+        <section class="hello">
+            <div class="hello_text">
+                <h1 class="text_header">Михельсон Сергей</h1>
+                <p class="text_introduce">
+                    Ваш юрист по уголовному и гражданскому праву. Более 12 лет юридической практики.
+                </p>
+                <div class="hello_btn">
+                    <button class="btn btn_orange">Стоимость услуг</button>
+                    <button class="btn ">Узнать подробности</button>
+                </div>
+            </div>
+        </section>
+        <!-- Раздел Услуги -->
+        <section id="services">
+            <p class="services_text">Юридические услуги</p>
+            <h3 class="services_header">Представляю ваши <br> интересы</h2>
+            <p class="services_description">Обратитесь ко мне, в любой жизненной ситуации. <br> вместе - мы справимся с любой задачей.</p>
+            <div class="services_img container_inn">
+                <img src="./img/family.png" alt="pic1">
+                <img src="./img/law.png" alt="pic2">
+                <img src="./img/court.png" alt="pic3">
+            </div>
+        </section>
+        <!-- Раздел обо мне -->
+        <section id="about">
+            <div class="about_description container_inn">
+                <h3 class="about_header">12 лет <br>частной <br>практики</h3>
+                <p class="about_text">Юристы компании «Юридическое Бюро 812» уже долгие годы ведут успешную практику в предоставлении услуг физическим и юридическим лицам в различных правовых сферах, решая вопросы любой сложности. Наши специалисты осуществляют представительство в государственных органах и обеспечивают защиту интересов в суде. Мы определяем перспективы уже на первичной консультации!
+                    <br><br>Наши юристы имеют большой опыт по представлению интересов структур малого и среднего бизнеса в различных правовых вопросах, возникающих в процессе их деятельности. Наши адвокаты и юристы представляют интересы доверителей в Арбитражном суде Санкт-Петербурга и ЛО, в государственных органах и учреждениях, а также осуществляют комплексное абонентское обслуживание по вопросам любой сложности.
+                </p>
+            </div>
+            <div class="about_img container_inn">
+                <div class="about_img_owner">
+                    <img src="./img/owner.png" alt="owner">
+                </div>
+                <div class="about_img_diplomas">
+                    <img src="./img/diploma.png" alt="pic1">
+                    <img src="./img/sertif.png" alt="pic2">
+                </div>
+            </div>
+        </section>
+        <!-- Раздел свяжитесь со мной -->
+        <section class="callme container">
+            <div class="callme_img">
+                <h3 class="callme_header">Свяжитесь со мной</h3>
+                <p class="callme_text">Окажу вам экспертную консультацию, вникну в суть вашей проблемы и подготовлю <br> оптимальный плане решения поставленной задачи</p>
+                <form action="/" method="post">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="tel" name="number" id="number" placeholder="+7(000) 000-0000">
+                    <input type="email" name="mail" id="mail" placeholder="E-mail">
+                    <button type="submit" class="btn btn_orange">Оставить заявку</button>
+                </form>
+            </div>
+        </section>
+        <!-- Раздел как я работаю -->
+        <section id="wework">
+          <h3 class="wework_header">Как я работаю?</h3>
+          <p class="wework_text">Внимательно ознакомьтесь с этапами работ и выберите для <br> себя самое полезное и интересное</p>
+          <div class="wework_slider">
+            <div class="wework_slide slide_1">
+                <div class="wework_block">
+                    <h4 class="wework_slide_header">Вникаю в суть дела</h3>
+                    <p class="wework_slide_text">Провожу с клиентом подробное собеседование, на котором выясняем все детали и обстоятельства</p>
+                </div>   
+                <div class="wework_number">1</div>
+            </div>
+            <div class="wework_slide slide_2">
+                <div class="wework_block">
+                    <h4 class="wework_slide_header">Предлагаю стратегии</h3>
+                    <p class="wework_slide_text">На основании полученной от клиента информации, готовлю различные варианты действий и согласовываю их с клиентом</p>
+                </div>
+                <div class="wework_number">2</div>
+            </div>
+            <div class="wework_slide slide_3">
+                <div class="wework_block">
+                    <h4 class="wework_slide_header">Начинаю работу</h3>
+                    <p class="wework_slide_text">После согласования с клиентом стратегии - начинаю активную работу над делом, довожу до результата</p>
+                </div>
+                <div class="wework_number">3</div>
+          </div>  
+        </section>
+        <!-- Раздел бесплатная консультация -->
+        <section class="consultation">
+            <h3 class="consultation_header">Бесплатная консультация</h3>
+            <p class="consultation_text">Успейте воспользоваться специальным предложением. Получите первую <br> юридическую консультацию совершенно бесплатно!</p>
+            <div class="consultation_timer timer">
+                <div class="timer_items">
+                    <div class="timer_item timer_days">00</div>
+                    <div class="timer_item timer_hours">00</div>
+                    <div class="timer_item timer_minutes">00</div>
+                    <div class="timer_item timer_seconds">00</div>
+                </div>
+            </div>
+            <form action="" method="post">
+                <input type="text">
+                <button type="submit" class=" btn btn_orange">Оставить заявку</button>
+            </form>
+        </section>
+        <!-- Раздел мои клиенты -->
+        <sectiion class="clients">
+            <h3 class="clients_header">Мои клиенты</h3>
+            <p class="clients_text">Мне доверяют самые известные компании <br> Санкт-Петербурга и Москвы</p>
+            <div class="clients_slider swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="./img/client_1.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/client_2.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/client_3.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/client_4.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/client_3.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/client_4.png" alt="">
+                  </div>
+                  
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+              </div>
+
+        </sectiion>
+        <!-- Раздел Отзывы -->
+        <section id="reviews">
+                <h3 class="reviews_header">Отзывы</h3>
+                <p class="reviews_text">Спасибо всем, кто оставил отзыв о нашей совместной работе</p>
+                <div class="reviews_cards_container container_inn">
+                    <div class="card">
+                        <img src="./img/user_1.png" alt="pic">
+                        <p class="card_description">Спасибо, что помогли мне избежать административного ареста, за то, чего я не совершал</p>
+                        <p class="card_user_name">Юрий Ставничий</p>
+                        <p class="card_sity">г. Санкт-Петербург</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/user_2.png" alt="pic">
+                        <p class="card_description">Спасибо Сергею Израилевичу, что помог мне с брако-разводным процессом. Теперь я свободна и открыта для новых знакомств</p>
+                        <p class="card_user_name">Александра Селезнева</p>
+                        <p class="card_sity">г. Москва</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/user_3.png" alt="pic">
+                        <p class="card_description">Спасибо за помощь и представительство в суде по делу с шумным соседом. Полодительное решение и компенсация!</p>
+                        <p class="card_user_name">Мария Браун</p>
+                        <p class="card_sity">г. Сочи</p>
+                    </div>
+                </div>
+        </section>
+        <!-- Раздел контакты -->
+        <section id="contacts">
+            <div id="map" class="contacts_map" style="width: 50%; height: 419px"></div>
+            <div class="contacts_tel">
+                <h3 class="contacts_header">Контакты</h3>
+                <a href="tel:+79876543210">+7 987 654-32-10</a> <br>
+                <a href="mailto:info@mikhelson.ru">info@mikhelson.ru</a>
+                <p class="contacts_adress">г. Москва, метро "Китай-город", <br> 
+                    ул. Яузская, дом 15/11
+                </p>
+                <button class="btn btn_social">Написать в WhatsApp</button>
+            </div>
+        </section>
+    </main>
+    <!-- Блок Footer -->
+    <footer class="footer">
+       <div class="container">
+        <div class="social">
+            <div class="social_icons">
+                <svg class="social_icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28" fill="white"/>
+                    <g clip-path="url(#clip0_444_335)">
+                    <path d="M39.9981 27.9991C39.9981 21.3722 34.626 16 27.9991 16C21.3722 16 16 21.3722 16 27.9991C16 33.9882 20.3879 38.9522 26.1242 39.8524V31.4676H23.0776V27.9991H26.1242V25.3555C26.1242 22.3483 27.9156 20.6871 30.6564 20.6871C31.9692 20.6871 33.3424 20.9215 33.3424 20.9215V23.8744H31.8294C30.3388 23.8744 29.8739 24.7993 29.8739 25.7482V27.9991H33.2018L32.6698 31.4676H29.8739V39.8524C35.6103 38.9522 39.9981 33.9882 39.9981 27.9991Z" fill="#FF5545"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_444_335">
+                    <rect width="24" height="24" fill="white" transform="translate(16 16)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="social_icons">
+                <svg class="social_icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28" fill="white"/>
+                    <g clip-path="url(#clip0_444_339)">
+                    <path d="M28 16C24.74 16 24.333 16.015 23.053 16.072C21.775 16.132 20.905 16.333 20.14 16.63C19.351 16.936 18.681 17.347 18.014 18.014C17.347 18.681 16.935 19.35 16.63 20.14C16.333 20.905 16.131 21.775 16.072 23.053C16.012 24.333 16 24.74 16 28C16 31.26 16.015 31.667 16.072 32.947C16.132 34.224 16.333 35.095 16.63 35.86C16.936 36.648 17.347 37.319 18.014 37.986C18.681 38.652 19.35 39.065 20.14 39.37C20.906 39.666 21.776 39.869 23.053 39.928C24.333 39.988 24.74 40 28 40C31.26 40 31.667 39.985 32.947 39.928C34.224 39.868 35.095 39.666 35.86 39.37C36.648 39.064 37.319 38.652 37.986 37.986C38.652 37.319 39.065 36.651 39.37 35.86C39.666 35.095 39.869 34.224 39.928 32.947C39.988 31.667 40 31.26 40 28C40 24.74 39.985 24.333 39.928 23.053C39.868 21.776 39.666 20.904 39.37 20.14C39.064 19.351 38.652 18.681 37.986 18.014C37.319 17.347 36.651 16.935 35.86 16.63C35.095 16.333 34.224 16.131 32.947 16.072C31.667 16.012 31.26 16 28 16ZM28 18.16C31.203 18.16 31.585 18.176 32.85 18.231C34.02 18.286 34.655 18.48 35.077 18.646C35.639 18.863 36.037 19.123 36.459 19.542C36.878 19.962 37.138 20.361 37.355 20.923C37.519 21.345 37.715 21.98 37.768 23.15C37.825 24.416 37.838 24.796 37.838 28C37.838 31.204 37.823 31.585 37.764 32.85C37.703 34.02 37.508 34.655 37.343 35.077C37.119 35.639 36.864 36.037 36.444 36.459C36.025 36.878 35.62 37.138 35.064 37.355C34.644 37.519 33.999 37.715 32.829 37.768C31.555 37.825 31.18 37.838 27.97 37.838C24.759 37.838 24.384 37.823 23.111 37.764C21.94 37.703 21.295 37.508 20.875 37.343C20.306 37.119 19.915 36.864 19.496 36.444C19.075 36.025 18.806 35.62 18.596 35.064C18.431 34.644 18.237 33.999 18.176 32.829C18.131 31.569 18.115 31.18 18.115 27.985C18.115 24.789 18.131 24.399 18.176 23.124C18.237 21.954 18.431 21.31 18.596 20.89C18.806 20.32 19.075 19.93 19.496 19.509C19.915 19.09 20.306 18.82 20.875 18.611C21.295 18.445 21.926 18.25 23.096 18.19C24.371 18.145 24.746 18.13 27.955 18.13L28 18.16ZM28 21.838C24.595 21.838 21.838 24.598 21.838 28C21.838 31.405 24.598 34.162 28 34.162C31.405 34.162 34.162 31.402 34.162 28C34.162 24.595 31.402 21.838 28 21.838ZM28 32C25.79 32 24 30.21 24 28C24 25.79 25.79 24 28 24C30.21 24 32 25.79 32 28C32 30.21 30.21 32 28 32ZM35.846 21.595C35.846 22.39 35.2 23.035 34.406 23.035C33.611 23.035 32.966 22.389 32.966 21.595C32.966 20.801 33.612 20.156 34.406 20.156C35.199 20.155 35.846 20.801 35.846 21.595Z" fill="#FF5545"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_444_339">
+                    <rect width="24" height="24" fill="white" transform="translate(16 16)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="social_icons">
+                <svg class="social_icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28" fill="white"/>
+                    <g clip-path="url(#clip0_444_343)">
+                    <path d="M39.954 20.5691C39.069 20.9581 38.124 21.2231 37.129 21.3441C38.143 20.7331 38.923 19.7701 39.292 18.6211C38.341 19.1761 37.287 19.5801 36.165 19.8051C35.269 18.8461 33.992 18.2461 32.574 18.2461C29.857 18.2461 27.654 20.4491 27.654 23.1631C27.654 23.5531 27.699 23.9281 27.781 24.2871C23.691 24.0941 20.066 22.1301 17.64 19.1611C17.213 19.8831 16.974 20.7221 16.974 21.6361C16.974 23.3461 17.844 24.8491 19.162 25.7321C18.355 25.7061 17.596 25.4841 16.934 25.1161V25.1771C16.934 27.5621 18.627 29.5511 20.88 30.0041C20.467 30.1151 20.031 30.1751 19.584 30.1751C19.27 30.1751 18.969 30.1451 18.668 30.0891C19.299 32.0421 21.113 33.4661 23.272 33.5061C21.592 34.8251 19.463 35.6111 17.17 35.6111C16.78 35.6111 16.391 35.5881 16 35.5441C18.189 36.9381 20.768 37.7531 23.557 37.7531C32.611 37.7531 37.556 30.2571 37.556 23.7671C37.556 23.5581 37.556 23.3471 37.541 23.1371C38.502 22.4481 39.341 21.5771 40.001 20.5891L39.954 20.5691Z" fill="#FF5545"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_444_343">
+                    <rect width="24" height="24" fill="white" transform="translate(16 16)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="social_icons">
+                <svg class="social_icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28" fill="white"/>
+                    <path d="M39.057 35.3021H36.4367C35.4451 35.3021 35.1386 34.5133 33.3566 32.7073C31.8046 31.2048 31.1179 31.002 30.7363 31.002C30.2014 31.002 30.0482 31.1552 30.0482 31.893V34.2594C30.0482 34.8964 29.8453 35.278 28.1656 35.278C25.392 35.278 22.3119 33.5983 20.1498 30.4671C16.8925 25.8876 16 22.4514 16 21.7392C16 21.3576 16.1533 21.0015 16.891 21.0015H19.5113C20.1724 21.0015 20.4278 21.3065 20.6832 22.0187C21.9799 25.7598 24.1434 29.0428 25.0344 29.0428C25.3649 29.0428 25.5182 28.8895 25.5182 28.0511V24.1807C25.416 22.3988 24.474 22.2471 24.474 21.6115C24.474 21.305 24.7294 21 25.1351 21H29.2579C29.8183 21 30.0211 21.305 30.0211 21.9661V27.1842C30.0211 27.7431 30.2765 27.9475 30.4283 27.9475C30.7588 27.9475 31.0398 27.7431 31.6498 27.1331C33.5339 25.0206 34.8816 21.7633 34.8816 21.7633C35.0604 21.3816 35.3654 21.0255 36.028 21.0255H38.6483C39.4371 21.0255 39.6159 21.4312 39.4371 21.9916C39.1066 23.5197 35.9003 28.0481 35.9003 28.0481C35.6208 28.5064 35.5187 28.7092 35.9003 29.2201C36.1798 29.6017 37.0963 30.3905 37.7078 31.1027C38.8271 32.3753 39.6911 33.4435 39.9209 34.1827C40.1764 34.919 39.7932 35.3006 39.0555 35.3006L39.057 35.3021Z" fill="#FF5545"/>
+                </svg>
+            </div>
+        </div>
+        <nav class="footer_nav">
+            <a href="#services">Виды услуг</a>
+            <a href="#about">Обо мне</a>
+            <a href="#wework">Как я работаю</a>
+            <a href="#reviews">Отзывы</a>
+        </nav>
+        <p class="footer_copyright">© 2020 Михельсон</p>
+       </div>
+    </footer>
+   
+    <script defer src="./js/map.js"></script>
+    <script defer src="./js/timer.js"></script>
+    <script defer src="./js/animation.js"></script>
+    <script src="./js/swiper.js" type="text/javascript"></script>
+
+
+</body>
+</html>

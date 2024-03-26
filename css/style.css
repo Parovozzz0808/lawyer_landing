@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+body {
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 68px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 68px;
+    color: #000; 
+}
+
+.btn {
+    padding: 14px 25px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    box-shadow: none;
+    background-color: #fff;
+    color: #FF5545;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn_orange {
+    border: 1px solid #FF5545;
+    background-color: #FF5545;
+    color: #fff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #F7F8FA;
+}
+
+.container_inn {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+header .container {
+    padding: 2rem 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 15rem;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+/* Header */
+.header  .container {
+    background-color: #fff;
+}
+
+.header_nav {
+    margin-right: 16px;
+}
+
+.header_nav a {
+    margin-right: 24px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #000;
+}
+
+.header_nav a:hover {
+    text-decoration: underline;
+}
+
+.header_call {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_call span {
+    margin-left: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.header_call a {
+    margin-right: 32px;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #000;
+}
+
+/* Main */
+
+/* Раздел Hello  */
+
+.hello {
+    margin-bottom: 120px;
+    background-image: url(../img/main_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hello_text {
+    max-width: 565px;
+    padding-top: 224px;
+    padding-left: 165px;
+}
+
+.text_header {
+    margin-bottom: 24px;
+}
+
+.text_introduce {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 31px;
+    color: #fff;
+}
+
+.hello_btn {
+    padding-bottom: 224px;
+}
+
+.hello_btn .btn_orange {
+    margin-right: 14px;
+}
+
+/* Раздел Услуги */
+
+#services {
+    margin: 0 auto;
+}
+
+.services_text {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 39px;
+    color: #FF5545;
+}
+
+.services_header {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.services_description {
+    margin-bottom: 64px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 31px;
+    color: #000;
+}
+
+.services_img {
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+.services_img  img {
+    width: 100%;
+    height: 100%;
+    margin-right: 30px;
+}
+
+/* Раздел обо мне */
+
+#about {
+    background-color: #fff;
+}
+
+.about_description {
+    padding-top: 120px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about_header{
+    width: 50%;
+    text-align: left;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 68px;
+}
+
+.about_text {
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.about_img {
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about_img_owner {
+    margin-right: 30px;
+}
+
+.about_img_diplomas img {
+    margin-bottom: 27px;
+}
+
+/* Раздел свяжитесь со мной */
+
+.callme {
+    margin-bottom: 120px;
+}
+
+.callme * {
+    text-align: center;
+}
+
+.callme_img {
+    height: 412px;
+    background: url(../img/callme_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.callme_header {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 52px;
+    color: #fff;
+}
+
+.callme_text {
+    padding-bottom: 40px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #fff;
+}
+
+form input {
+    padding: 14px 25px;
+    margin-right: 10px;
+    text-align: left!important;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    border: 1px solid #00000031;
+    border-radius: 6px;
+}
+
+form input::placeholder {
+    text-align: left;
+}
+
+form button {
+    padding: 14px 25px;
+    border-radius: 6px;
+    border: 1px solid #FF5545;
+    box-shadow: none;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+/* Раздел как я работаю */
+
+#wework {
+    text-align: center;
+}
+
+.wework_header {
+    margin-bottom: 24px;
+}
+
+.wework_text {
+    margin-bottom: 7rem;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 31px;
+}
+
+.wework_slider {
+    margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wework_slide {
+    display: flex;
+    margin-bottom: 6rem;
+    opacity: 0;
+}
+
+.wework_slide.wework_slide_show {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.wework_block {
+    max-width: 250px;
+    margin-right: 2rem;
+    order: 2;
+}
+
+.wework_slide_header {
+    margin-bottom: 1rem;
+}
+
+.wework_slide_text {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.wework_number {
+    width: 64px;
+    height: 64px;
+    margin-top: 1%;
+    margin-right: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF5545;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #FF5545;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 31px;
+    order: 1;
+}
+
+/* Раздел бесплатная консультация */
+
+.consultation {
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 798px;
+    background-image: url(../img/consult.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.consultation_header {
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.consultation_text {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 31px;
+    color: #fff;
+}
+
+.consultation_timer {
+    margin-bottom: 30px;
+}
+
+.timer_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 48px;
+    color: #fff;
+}
+
+.timer_item {
+    position: relative;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.timer_item::before {
+    content: attr(data-title);
+    position: absolute;
+    bottom: -10px;
+    font-size: 18px;
+    color: #FFFFFFB2;
+}
+
+.timer_item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+}
+
+
+/* Раздел мои клиенты */
+
+.clients {
+    margin-bottom: 100px;
+}
+
+.clients_header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.clients_text {
+    text-align: center;
+    margin-bottom: 64px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 31px;
+}
+
+.clients_slider {
+    margin-bottom: 188px;
+    padding-bottom: 40px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-wrapper {
+    margin-left: 100px;
+    display: flex;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    color: #FF5545;
+}
+
+
+/* Раздел Отзывы */
+
+#reviews {
+    padding-bottom: 100px;
+}
+
+.reviews_header {
+    text-align: center;
+    margin-bottom: 24px;
+
+}
+
+.reviews_text {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 31px;
+}
+
+.reviews_cards_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.card img {
+    position: absolute;
+    left: 40%;
+    top: 12%;
+}
+
+.card_description {
+    padding: 136px 50px 32px 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 31px;
+}
+
+.card_user_name {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.card_sity {
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #00000066;
+}
+
+/* Раздел контакты */
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+}
+
+.contacts_map {
+    width: 50%;
+    height: 100%;
+}
+
+.contacts_tel {
+    padding-left: 125px;
+    width: 50%;
+    align-self: center;
+}
+
+.contacts_tel * {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #000;
+}
+
+.contacts_header {
+    margin-top: 82px;
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.contacts_adress {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.btn_social::before {
+    content: '';
+    background: url(../img/Whatsapp.png);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    transform: translateY(7px);
+    margin-right: 10px;
+}
+
+.btn_social {
+    padding: 14px 25px;
+    margin-bottom: 82px;
+    border-radius: 6px;
+    border: 0px solid transparent;
+    box-shadow: none;
+    background-color: #00E676;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 31px;
+}
+
+/* Блок Footer */
+
+.footer .container {
+    padding: 80px 0 80px 0;
+}
+
+.social {
+    margin: 0 auto;
+    max-width: 254px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.social_icon {
+    transition: all .8s ease;
+}
+
+.social_icon path{
+    fill: #FF5545;
+}
+
+.social_icon:hover path{
+    fill: #fff;
+}
+
+.social_icon:hover circle{
+    fill: #FF5545;
+}
+
+.footer_nav {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.footer_nav a {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #000;
+}
+
+.footer_nav a:hover {
+    text-decoration: underline;
+}
+
+.footer_nav a:not(:last-child) {
+    margin-right: 40px;
+}
+
+.footer_copyright {
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    color: #00000066;
+}
